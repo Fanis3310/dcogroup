@@ -1,0 +1,428 @@
+<!DOCTYPE html><html class="scroll-smooth light" lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Profile | DCO Group</title>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "surface-container-high": "#e7e8e9",
+                  "on-secondary-container": "#fffbff",
+                  "surface-tint": "#435b9f",
+                  "tertiary-fixed": "#d4e4f6",
+                  "tertiary": "#051522",
+                  "error-container": "#ffdad6",
+                  "primary": "#00113a",
+                  "on-error": "#ffffff",
+                  "on-surface": "#191c1d",
+                  "secondary-container": "#446ce4",
+                  "primary-fixed": "#dbe1ff",
+                  "on-secondary-fixed-variant": "#003baf",
+                  "on-tertiary": "#ffffff",
+                  "on-tertiary-fixed": "#0d1d2a",
+                  "surface-container-lowest": "#ffffff",
+                  "primary-container": "#002366",
+                  "inverse-on-surface": "#f0f1f2",
+                  "primary-fixed-dim": "#b3c5ff",
+                  "tertiary-container": "#1a2a37",
+                  "on-primary": "#ffffff",
+                  "error": "#ba1a1a",
+                  "surface-bright": "#f8f9fa",
+                  "inverse-surface": "#2e3132",
+                  "surface-variant": "#e1e3e4",
+                  "secondary": "#2552ca",
+                  "secondary-fixed": "#dce1ff",
+                  "on-surface-variant": "#444650",
+                  "background": "#f8f9fa",
+                  "surface-container-low": "#f3f4f5",
+                  "on-secondary-fixed": "#00164e",
+                  "inverse-primary": "#b3c5ff",
+                  "on-secondary": "#ffffff",
+                  "surface-container-highest": "#e1e3e4",
+                  "on-tertiary-container": "#8191a2",
+                  "tertiary-fixed-dim": "#b8c8da",
+                  "surface-container": "#edeeef",
+                  "on-primary-container": "#758dd5",
+                  "secondary-fixed-dim": "#b6c4ff",
+                  "outline-variant": "#c5c6d2",
+                  "on-background": "#191c1d",
+                  "surface": "#f8f9fa",
+                  "outline": "#757682",
+                  "surface-dim": "#d9dadb",
+                  "on-tertiary-fixed-variant": "#394857",
+                  "on-primary-fixed": "#00174a",
+                  "on-primary-fixed-variant": "#2a4386",
+                  "on-error-container": "#93000a"
+                },
+                fontFamily: {
+                  "headline": ["Manrope"],
+                  "body": ["Inter"],
+                  "label": ["Inter"]
+                },
+                borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+              },
+            },
+          }
+        </script>
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-outline-variant/20">
+    <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+        <a href="/index.html" class="text-xl font-bold tracking-tighter text-primary font-headline">DCO Group</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8 desktop-menu absolute left-1/2 transform -translate-x-1/2">
+            <div class="dropdown relative group">
+                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="/index.html">Home <span class="material-symbols-outlined text-xs">expand_more</span></a>
+                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/index.html#about">About Us</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/index.html#team">Our Team</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/index.html#careers">Careers</a>
+                </div>
+            </div>
+            <div class="dropdown relative group">
+                <a class="font-headline tracking-tight font-bold text-sm text-primary border-b-2 border-primary pb-1 flex items-center gap-1" href="/profile.html">Profile <span class="material-symbols-outlined text-xs">expand_more</span></a>
+                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/profile.html#mission">Mission</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/profile.html#leadership">Leadership</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/profile.html#history">History</a>
+                </div>
+            </div>
+            <div class="dropdown relative group">
+                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="/buisnesssectors.html">Business Sectors <span class="material-symbols-outlined text-xs">expand_more</span></a>
+                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/buisnesssectors.html#technology">Technology</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/buisnesssectors.html#finance">Finance</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/buisnesssectors.html#consulting">Consulting</a>
+                </div>
+            </div>
+            <div class="dropdown relative group">
+                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="/finance.html">Business & Finance <span class="material-symbols-outlined text-xs">expand_more</span></a>
+                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/finance.html#services">Services</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/finance.html#investment">Investment Solutions</a>
+                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/finance.html#advisory">Advisory</a>
+                </div>
+            </div>
+            <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors" href="/contact.html">Contact</a>
+        </div>
+        <button class="hidden md:block bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline text-sm font-semibold hover:opacity-90 transition-all duration-300 active:scale-95">
+            Contact Us
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn md:hidden" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-dropdown">
+                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
+                    <a href="/index.html" class="text-base font-headline font-medium">Home</a>
+                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
+                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
+                    </button>
+                </div>
+                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
+                    <a href="/index.html#about" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">B2C</a>
+                    <a href="/index.html#team" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">B2B</a>
+                    <a href="/index.html#careers" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Careers</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
+                    <a href="/profile.html" class="text-base font-headline font-bold text-primary">Profile</a>
+                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
+                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
+                    </button>
+                </div>
+                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
+                    <a href="/profile.html#mission" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Values, Vision & Mission</a>
+                    <a href="/profile.html#leadership" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Corporate Governance</a>
+                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Quality Policy</a>
+                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">HSE Policy</a>
+                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Business Continuity & Sustainability Pol</a>
+                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Competitive Advantage</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
+                    <a href="/buisnesssectors.html" class="text-base font-headline font-medium">Business Sectors</a>
+                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
+                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
+                    </button>
+                </div>
+                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
+                    <span class="text-xs font-headline font-bold text-primary uppercase tracking-wider px-2 py-1">Digital & Innovation</span>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">MyNets Electronics</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">FlyDrone Drone Alarm & Video Technologie</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">SpaceCities</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Fastcom</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">E-Shops & Retail</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">IdeoFix</a>
+                    <span class="text-xs font-headline font-bold text-primary uppercase tracking-wider px-2 py-1 mt-2">Gastro Hellas</span>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">JumpIn Fast Food</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Souvlaki Shops Fast Food</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Annas Schnitzel Stube Restaurant</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Salt n Peppers Bistro Brasserie</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Ta Pentarakia Tavern</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Bella Nova Cafe</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Deutsches Eck Restaurant</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Monte Carlo Restaurant</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Annas Schnitzel Vipe Fast Food</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">TIC TOC Fast Food</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">TIC TOC Sandwichland</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Yellowstone Seiler Ranch</a>
+                    <span class="text-xs font-headline font-bold text-primary uppercase tracking-wider px-2 py-1 mt-2">Travel & Tourism</span>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">TTO Tourism</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Star Tours</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">InterFastHellas</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Terpo Tattoo Studio</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">FadeHall Barber</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Linea Natura Massage Studio</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Obsidian Piercing Studio</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Nailing Fit Nail Studio</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Stay In</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Hellas Aid Home Health and Care Services</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Hellas Aid Physiotherapy</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Hellas Aid Medical Tourism</a>
+                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Witeliners</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
+                    <a href="/finance.html" class="text-base font-headline font-medium">Business & Finance</a>
+                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
+                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
+                    </button>
+                </div>
+                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
+                    <a href="/finance.html#services" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Investments</a>
+                    <a href="/finance.html#investment" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Fisabco</a>
+                    <a href="/finance.html#advisory" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">The Consul Club</a>
+                </div>
+            </div>
+            <a href="/contact.html" class="text-base font-headline font-medium text-on-surface-variant hover:text-primary transition-colors py-3 border-b border-outline-variant/30">Contact</a>
+            <a href="/contact.html" class="bg-primary text-white text-center py-3 rounded-xl mt-4 font-headline font-bold text-base">Contact Us</a>
+        </div>
+    </div>
+    </nav>
+    <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="relative px-8 md:px-24 py-24 overflow-hidden">
+    <div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+    <div class="lg:col-span-7 z-10">
+    <span class="inline-block py-1 px-3 bg-secondary-container/10 text-secondary font-label text-[10px] tracking-[0.2em] uppercase font-bold rounded-sm mb-8" style="">Corporate Identity</span>
+    <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-[1.1] mb-8" style="">
+                            DCO Two Pillars, <br><span class="text-secondary" style="">One Vision.</span>
+    </h1>
+    <p class="text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed font-light font-body" style="">
+                            Architecting tomorrow through strategic operational excellence and financial discipline. A resilient framework for sustainable growth.
+                        </p>
+    </div>
+    <div class="lg:col-span-5 relative">
+    <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl group">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern architectural close-up of a glass skyscraper reflecting a clear blue sky, emphasizing structural integrity and transparency." src="https://img.freepik.com/free-photo/low-angle-shot-beautiful-glass-building-blue-sky_181624-6231.jpg?semt=ais_hybrid&amp;w=740&amp;q=80" style="">
+    </div>
+    <div class="absolute -bottom-8 -left-8 bg-primary p-10 rounded-xl shadow-xl hidden md:block">
+    <p class="text-white font-headline text-2xl font-bold leading-tight" style="">DCO<br>Holding</p>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Refined Company Overview & Investor Profile (Asymmetric Layout) -->
+    <section class="bg-surface-container-low py-40 px-8 relative overflow-hidden">
+    <div class="max-w-screen-2xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+    <!-- Asymmetric Column 1: Investor Profile -->
+    <div class="lg:col-span-5 relative">
+    <div class="hidden lg:block absolute -left-12 top-0 h-full">
+    <span class="text-sideways rotate-180 text-[10px] tracking-[0.6em] uppercase font-black text-secondary/20 whitespace-nowrap" style="">DCO STRATEGIC BACKBONE</span>
+    </div>
+    <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase font-black mb-6 block" style="">Strategic Backbone</span>
+    <h2 class="font-headline text-5xl md:text-7xl font-bold text-primary mb-12 tracking-tighter leading-none" style="">Investor Profile</h2>
+    <p class="text-on-surface text-2xl leading-relaxed mb-16 font-body font-light" style="">
+                            DCO Holding functions as the <span class="text-primary font-bold" style="">commercial backbone</span> of the DCO system. As a strategic parent company, it manages a diversified and future-oriented portfolio.
+                        </p>
+    <div class="bg-white p-12 rounded-3xl shadow-2xl border border-outline-variant/10 relative z-10 -mr-24 hidden lg:block">
+    <h3 class="font-headline font-bold text-primary text-3xl mb-8 flex items-center gap-4" style="">
+    <span class="w-8 h-1 bg-secondary rounded-full"></span>
+                                Company Overview
+                            </h3>
+    <p class="text-on-surface-variant text-lg leading-relaxed font-body" style="">
+    <strong class="text-primary">DCO Holding</strong> unites companies from technology, media, real estate, logistics, agriculture, tourism, and hospitality. With a strong emphasis on innovation and sustainable expansion, the group builds economic independence and long-term value.
+                            </p>
+    </div>
+    <!-- Mobile version of the card -->
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/10 lg:hidden mb-12">
+    <h3 class="font-headline font-bold text-primary text-2xl mb-6" style="">Company Overview</h3>
+    <p class="text-on-surface-variant text-base leading-relaxed font-body" style="">
+    <strong class="text-primary">DCO Holding</strong> unites companies from technology, media, real estate, logistics, agriculture, tourism, and hospitality. With a strong emphasis on innovation and sustainable expansion, the group builds economic independence and long-term value.
+                            </p>
+    </div>
+    </div>
+    <!-- Asymmetric Column 2: Business Sectors (Asymmetric Grid) -->
+    <div class="lg:col-span-7 lg:pl-12 pt-8">
+    <div class="flex items-center justify-between mb-16">
+    <h2 class="font-headline text-4xl font-extrabold text-primary tracking-tight" style="">Business Sectors</h2>
+    <div class="h-px bg-outline-variant flex-grow ml-8 hidden md:block"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+    <!-- Sector 1: Wide Card -->
+    <div class="md:col-span-2 bg-white p-10 rounded-2xl shadow-sm border-l-8 border-secondary transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 group">
+    <div class="flex justify-between items-start mb-4">
+    <h4 class="font-headline font-bold text-primary text-2xl group-hover:text-secondary transition-colors" style="">1. Technology &amp; Media</h4>
+    <span class="material-symbols-outlined text-outline-variant group-hover:text-secondary transition-colors" style="">hub</span>
+    </div>
+    <p class="text-on-surface-variant text-lg font-body leading-relaxed max-w-2xl" style="">Digital solutions, communication systems, platforms, and innovative software-driven services that define the modern landscape.</p>
+    </div>
+    <!-- Sector 2 -->
+    <div class="bg-primary p-10 rounded-2xl shadow-sm text-white transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] flex flex-col justify-between h-80">
+    <div class="flex justify-between items-start">
+    <h4 class="font-headline font-bold text-2xl" style="">2. Real Estate &amp; Construction</h4>
+    <span class="material-symbols-outlined opacity-50" style="">architecture</span>
+    </div>
+    <p class="text-white/70 text-base font-body leading-relaxed" style="">Property development, renovation, interior architecture, and premium furniture/kitchen design.</p>
+    </div>
+    <!-- Sector 3: Offset Positioning -->
+    <div class="bg-white p-10 rounded-2xl shadow-sm border-t-8 border-secondary transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col justify-between h-80 md:mt-12">
+    <div class="flex justify-between items-start">
+    <h4 class="font-headline font-bold text-primary text-2xl" style="">3. Trade &amp; Services</h4>
+    <span class="material-symbols-outlined text-secondary" style="">shopping_cart</span>
+    </div>
+    <p class="text-on-surface-variant text-base font-body leading-relaxed" style="">Retail operations, transport and logistics concepts, and hospitality service models.</p>
+    </div>
+    <!-- Sector 4 -->
+    <div class="bg-white p-10 rounded-2xl shadow-sm border-b-8 border-secondary transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col justify-between h-80">
+    <div class="flex justify-between items-start">
+    <h4 class="font-headline font-bold text-primary text-2xl" style="">4. Agriculture &amp; Food</h4>
+    <span class="material-symbols-outlined text-secondary" style="">agriculture</span>
+    </div>
+    <p class="text-on-surface-variant text-base font-body leading-relaxed" style="">Production facilities, advanced food processing, and international trade channels.</p>
+    </div>
+    <!-- Sector 5: Tall/Offset -->
+    <div class="bg-secondary p-10 rounded-2xl shadow-sm text-white transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] flex flex-col justify-between h-80 md:-mt-12">
+    <div class="flex justify-between items-start">
+    <h4 class="font-headline font-bold text-2xl" style="">5. Tourism &amp; Hospitality</h4>
+    <span class="material-symbols-outlined opacity-50" style="">hotel</span>
+    </div>
+    <p class="text-white/80 text-base font-body leading-relaxed" style="">Sustainable travel concepts, hotel management, gastronomy, and leisure development.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Vision & Economic Impact -->
+    <section class="py-40 px-8 bg-surface">
+    <div class="max-w-screen-2xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-20">
+    <div class="lg:col-span-5">
+    <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase font-black mb-6 block" style="">Our Vision</span>
+    <h2 class="font-headline text-5xl font-extrabold text-primary mb-10 tracking-tight leading-tight" style="">Strategic Stability</h2>
+    <p class="text-on-surface-variant text-xl leading-relaxed font-body" style="">
+                                DCO Holding stands for strategic diversification, economic strength, and long-term stability. Our goal is to build a resilient and scalable economic ecosystem that offers investors excellent growth opportunities, predictable returns, and a robust risk-balanced structure.
+                            </p>
+    </div>
+    <div class="lg:col-span-7">
+    <h2 class="font-headline text-4xl font-bold text-primary mb-12 tracking-tight" style="">Economic Impact</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="p-10 bg-surface-container-low rounded-2xl transition-all hover:bg-white hover:shadow-xl group">
+    <div class="bg-primary/5 text-primary w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all mb-6">
+    <span class="material-symbols-outlined text-3xl" style="">groups</span>
+    </div>
+    <h4 class="font-headline font-bold text-primary text-xl mb-2" style="">Employment</h4>
+    <p class="text-on-surface-variant text-sm font-body leading-relaxed" style="">Job creation and long-term workforce stability across sectors.</p>
+    </div>
+    <div class="p-10 bg-surface-container-low rounded-2xl transition-all hover:bg-white hover:shadow-xl group">
+    <div class="bg-primary/5 text-primary w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all mb-6">
+    <span class="material-symbols-outlined text-3xl" style="">lightbulb</span>
+    </div>
+    <h4 class="font-headline font-bold text-primary text-xl mb-2" style="">Innovation</h4>
+    <p class="text-on-surface-variant text-sm font-body leading-relaxed" style="">Continuous development of new models, products, and technologies.</p>
+    </div>
+    <div class="p-10 bg-surface-container-low rounded-2xl transition-all hover:bg-white hover:shadow-xl group">
+    <div class="bg-primary/5 text-primary w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all mb-6">
+    <span class="material-symbols-outlined text-3xl" style="">rocket_launch</span>
+    </div>
+    <h4 class="font-headline font-bold text-primary text-xl mb-2" style="">Entrepreneurship</h4>
+    <p class="text-on-surface-variant text-sm font-body leading-relaxed" style="">Promotion of start-ups and strategic collaborations.</p>
+    </div>
+    <div class="p-10 bg-surface-container-low rounded-2xl transition-all hover:bg-white hover:shadow-xl group">
+    <div class="bg-primary/5 text-primary w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all mb-6">
+    <span class="material-symbols-outlined text-3xl" style="">trending_up</span>
+    </div>
+    <h4 class="font-headline font-bold text-primary text-xl mb-2" style="">Sustainable Growth</h4>
+    <p class="text-on-surface-variant text-sm font-body leading-relaxed" style="">Long-term portfolio value and stable expansion.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- CTA Banner -->
+    <section class="h-[614px] relative overflow-hidden flex items-center justify-center">
+    <div class="absolute inset-0 z-0">
+    <img alt="Modern Office" class="w-full h-full object-cover grayscale opacity-40 parallax-bg" data-alt="Extreme wide angle shot of a clean, bright, ultra-modern office lobby with polished concrete floors and architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4sVGsEFM7gKnbEwu9V9VU53SXJ-3NDQrrolqZkcHC0p0CtbMwLeoLEZHblpQfvg16Os-XHg9_XtsnrPm2g5NtA7j4TsKTPqTozalhqEtN3i7LCKt34K9CULgON2_sxeNUpvXAeiXkFXQdIWfkl-8rSmoZlQdyVqdapgvUaKFCZGH7ta1jHbszxC9x_e0iX67iR3j_Xlld90kuO3f9zwMDhaA8vVD8R2ZyvJauQjVsqIYSVu_ZkTw5w8h-UlRUcIP4wrO55jJFDcai" style="">
+    <div class="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface"></div>
+    </div>
+    <div class="container mx-auto px-8 relative z-10 text-center">
+    <h2 class="font-headline text-4xl md:text-6xl font-black text-primary tracking-tight mb-8" style="">Architecting Tomorrow.</h2>
+    <button class="bg-primary text-on-primary px-10 py-5 rounded-lg font-headline font-bold text-xl hover:shadow-2xl transition-all hover:-translate-y-1" style="">
+                        View Investment Portfolio
+                    </button>
+    </div>
+    </section>
+    </main>
+    <footer class="bg-surface-container-high/30 w-full border-t border-outline-variant/20">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+    <div class="col-span-1 md:col-span-1">
+    <div class="text-lg font-black tracking-tighter text-primary mb-6 font-headline">DCO Group</div>
+    <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+                    Driving the global transition towards sustainable operations and impactful corporate governance.
+                </p>
+    </div>
+    <div class="flex flex-col gap-4">
+    <span class="text-primary font-headline text-xs tracking-wide uppercase font-bold mb-2">Company</span>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/profile.html">About Us</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/profile.html">Executive Team</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Vision & Mission</a>
+    </div>
+    <div class="flex flex-col gap-4">
+    <span class="text-primary font-headline text-xs tracking-wide uppercase font-bold mb-2">Business</span>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/buisnesssectors.html">Business Sectors</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/finance.html">Investment Portfolio</a>
+    </div>
+    <div class="flex flex-col gap-4">
+    <span class="text-primary font-headline text-xs tracking-wide uppercase font-bold mb-2">Connect</span>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/contact.html">Contact Us</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Global Offices</a>
+    </div>
+    <div class="flex flex-col gap-6">
+    <span class="text-primary font-headline text-xs tracking-wide uppercase font-bold">Subscribe to Insights</span>
+    <div class="relative">
+    <input class="w-full bg-surface border-outline-variant rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-secondary outline-none border" placeholder="Your work email" type="email">
+    <button class="absolute right-2 top-2 bg-primary text-on-primary p-1 rounded-md">
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </button>
+    </div>
+    </div>
+    </div>
+    <div class="px-12 py-8 border-t border-outline-variant/10 text-center">
+    <p class="text-on-surface-variant/60 text-xs uppercase tracking-widest font-bold">&copy; 2026 DCO Group of Companies. All rights reserved.</p>
+    </div>
+    </footer>
+    <script src="js/main.js"></script>
+    </body></html>
