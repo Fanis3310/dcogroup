@@ -72,152 +72,307 @@
     <link rel="stylesheet" href="css/styles.css">
     </head>
     <body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
-    <!-- Top Navigation Shell -->
+    <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-outline-variant/20">
-    <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
-        <a href="/index.html" class="text-xl font-bold tracking-tighter text-primary font-headline">DCO Group</a>
+        <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+            <div class="md:ml-8">
+                <a href="/index.html">
+                    <img src="/img/finaldco.png" alt="DCO Group" class="h-12 md:h-14 w-auto">
+                </a>
+            </div>
 
-        <!-- Desktop Menu - centered -->
-        <div class="hidden md:flex items-center gap-8 desktop-menu absolute left-1/2 transform -translate-x-1/2">
-            <div class="dropdown relative group">
-                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="/index.html">Home <span class="material-symbols-outlined text-xs">expand_more</span></a>
-                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/index.html#about">About Us</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/index.html#team">Our Team</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/index.html#careers">Careers</a>
+            <!-- Desktop Menu - centered -->
+            <div class="hidden md:flex items-center gap-8 desktop-menu absolute left-1/2 transform -translate-x-1/2">
+                <div class="dropdown relative group">
+                    <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors flex items-center gap-1"
+                        href="/index.html">
+                        Home <span class="material-symbols-outlined text-xs">expand_more</span>
+                    </a>
+
+                    <div
+                        class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/index.html#about">B2C</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/index.html#team">B2B</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/index.html#careers">Careers</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown relative group">
-                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="/profile.html">Profile <span class="material-symbols-outlined text-xs">expand_more</span></a>
-                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/profile.html#mission">Mission</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/profile.html#leadership">Leadership</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/profile.html#history">History</a>
+
+                <div class="dropdown relative group">
+                    <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors flex items-center gap-1"
+                        href="/profile.html">
+                        Profile <span class="material-symbols-outlined text-xs">expand_more</span>
+                    </a>
+
+                    <div
+                        class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/profile.html#mission">Values, Vision & Mission</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/profile.html#leadership">Corporate Governance</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/profile.html#history">Quality Policy</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/profile.html#history">HSE Policy</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/profile.html#history">Business Continuity & Sustainability Pol</a>
+                        <a class="block px-4 py-2 text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                            href="/profile.html#history">Competitive Advantage</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown relative group">
-                <a class="font-headline tracking-tight font-bold text-sm text-primary border-b-2 border-primary pb-1 flex items-center gap-1" href="/buisnesssectors.html">Business Sectors <span class="material-symbols-outlined text-xs">expand_more</span></a>
-                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/buisnesssectors.html#technology">Technology</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/buisnesssectors.html#finance">Finance</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/buisnesssectors.html#consulting">Consulting</a>
+                <div class="dropdown relative group">
+                    <a class="font-headline tracking-tight font-bold text-sm text-primary border-b-2 border-primary pb-1 flex items-center gap-1"
+                        href="/buisnesssectors.html">
+                        Business Sectors <span class="material-symbols-outlined text-xs">expand_more</span>
+                    </a>
+
+                    <div
+                        class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 w-max p-6 grid grid-cols-3 gap-8">
+
+                        <div class="flex flex-col space-y-3">
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">
+                                Digital & Innovation
+                            </a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">MyNets Electronics</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">FlyDrone Drone Alarm & Video Technologie</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">SpaceCities</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Fastcom</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">E-Shops
+                                & Retail</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Construction
+                                & Renovations</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">IdeoFix</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Drink
+                                and Food</a>
+                        </div>
+
+                        <div class="flex flex-col space-y-3">
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">
+                                Gastro Hellas
+                            </a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">JumpIn Fast Food</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Souvlaki Shops Fast Food</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Annas Schnitzel Stube Restaurant</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Salt n Peppers Bistro Brasserie</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Ta Pentarakia Tavern</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Bella Nova Cafe</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Deutsches Eck Restaurant</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Monte Carlo Restaurant</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca]transition-colors"
+                                href="#">Annas Schnitzel Vipe Fast Food</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">TIC TOC Fast Food</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">TIC TOC Sandwichland</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Agro
+                                LInk</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Yellowstone Seiler Ranch</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">HellasFood
+                                Trading</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">DM Markets</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">La Boulangeria</a>
+                            <a class="text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                                href="#">Select24</a>
+                        </div>
+
+                        <div class="flex flex-col space-y-3">
+                            <a href="/consulting.html"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">
+                                Travel & Tourism
+                            </a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">TTO
+                                Tourism</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Star Tours</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Transportation
+                                & Logistics</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">InterFastHellas</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Body
+                                and Wellness</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Terpo Tattoo Studio</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">FadeHall Barber</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Linea Natura Massage Studio</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Obsidian Piercing Studio</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Nailing Fit Nail Studio</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Real
+                                Estate</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Stay In</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Health
+                                & Care</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Hellas Aid Home Health and Care Services</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Hellas Aid Physiotherapy</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Hellas Aid Medical Tourism</a>
+                            <a href="#"
+                                class="font-bold text-sm text-primary mb-1 border-b pb-1 hover:opacity-70 transition-opacity inline-block">Media
+                                & Printings</a>
+                            <a class="text-sm text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Witeliners</a>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown relative group">
-                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="/finance.html">Business & Finance <span class="material-symbols-outlined text-xs">expand_more</span></a>
-                <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/finance.html#services">Services</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/finance.html#investment">Investment Solutions</a>
-                    <a class="block px-4 py-3 text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="/finance.html#advisory">Advisory</a>
+                <div class="dropdown relative group">
+                    <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors flex items-center gap-1"
+                        href="/finance.html">Business & Finance <span
+                            class="material-symbols-outlined text-xs">expand_more</span></a>
+                    <div
+                        class="dropdown-menu absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px] z-50">
+                        <a class="block pl-4 pr-12 py-3 text-sm text-on-surface-variant hover:text-[#2552ca]  transition-colors"
+                            href="/finance.html#services">Investments</a>
+                        <a class="block pl-4 pr-12 py-3 text-sm text-on-surface-variant hover:text-[#2552ca]  transition-colors"
+                            href="/finance.html#investment">Fisabco</a>
+                        <a class="block pl-4 pr-12 py-3 text-sm text-on-surface-variant hover:text-[#2552ca]  transition-colors"
+                            href="/finance.html#advisory">The Consul Club</a>
+                    </div>
                 </div>
+                <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-[#2552ca] transition-colors"
+                        href="/contact.html">Contact</a>
             </div>
-            <a class="font-headline tracking-tight font-medium text-sm text-on-surface-variant hover:text-primary transition-colors" href="/contact.html">Contact</a>
+            <button
+                class="hidden md:block bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline text-sm font-semibold hover:opacity-90 transition-all duration-300 active:scale-95">
+                Call Us Now
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn md:hidden" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
-        <button class="hidden md:block bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline text-sm font-semibold hover:opacity-90 transition-all duration-300 active:scale-95">
-            Contact Us
-        </button>
-
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu-btn md:hidden" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Mobile Menu Dropdown -->
-        <div class="mobile-menu md:hidden">
-            <div class="mobile-dropdown">
-                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
-                    <a href="/index.html" class="text-base font-headline font-medium">Home</a>
-                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
-                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
-                    </button>
-                </div>
-                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
-                    <a href="/index.html#about" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">B2C</a>
-                    <a href="/index.html#team" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">B2B</a>
-                    <a href="/index.html#careers" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Careers</a>
-                </div>
-            </div>
-            <div class="mobile-dropdown">
-                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
-                    <a href="/profile.html" class="text-base font-headline font-medium">Profile</a>
-                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
-                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
-                    </button>
-                </div>
-                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
-                    <a href="/profile.html#mission" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Values, Vision & Mission</a>
-                    <a href="/profile.html#leadership" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Corporate Governance</a>
-                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Quality Policy</a>
-                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">HSE Policy</a>
-                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Business Continuity & Sustainability Pol</a>
-                    <a href="/profile.html#history" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Competitive Advantage</a>
-                </div>
-            </div>
-            <div class="mobile-dropdown">
-                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
-                    <a href="/buisnesssectors.html" class="text-base font-headline font-bold text-primary">Business Sectors</a>
-                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
-                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
-                    </button>
-                </div>
-                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
-                    <span class="text-xs font-headline font-bold text-primary uppercase tracking-wider px-2 py-1">Digital & Innovation</span>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">MyNets Electronics</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">FlyDrone Drone Alarm & Video Technologie</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">SpaceCities</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Fastcom</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">E-Shops & Retail</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">IdeoFix</a>
-                    <span class="text-xs font-headline font-bold text-primary uppercase tracking-wider px-2 py-1 mt-2">Gastro Hellas</span>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">JumpIn Fast Food</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Souvlaki Shops Fast Food</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Annas Schnitzel Stube Restaurant</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Salt n Peppers Bistro Brasserie</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Ta Pentarakia Tavern</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Bella Nova Cafe</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Deutsches Eck Restaurant</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Monte Carlo Restaurant</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Annas Schnitzel Vipe Fast Food</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">TIC TOC Fast Food</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">TIC TOC Sandwichland</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Yellowstone Seiler Ranch</a>
-                    <span class="text-xs font-headline font-bold text-primary uppercase tracking-wider px-2 py-1 mt-2">Travel & Tourism</span>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">TTO Tourism</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Star Tours</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">InterFastHellas</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Terpo Tattoo Studio</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">FadeHall Barber</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Linea Natura Massage Studio</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Obsidian Piercing Studio</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Nailing Fit Nail Studio</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Stay In</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Hellas Aid Home Health and Care Services</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Hellas Aid Physiotherapy</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Hellas Aid Medical Tourism</a>
-                    <a href="#" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Witeliners</a>
-                </div>
-            </div>
-            <div class="mobile-dropdown">
-                <div class="flex items-center justify-between py-3 border-b border-outline-variant/30">
-                    <a href="/finance.html" class="text-base font-headline font-medium">Business & Finance</a>
-                    <button class="mobile-dropdown-toggle p-1" aria-expanded="false">
-                        <span class="material-symbols-outlined text-xl transition-transform duration-300">expand_more</span>
-                    </button>
-                </div>
-                <div class="mobile-dropdown-content hidden pl-4 flex flex-col gap-0 py-2">
-                    <a href="/finance.html#services" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Investments</a>
-                    <a href="/finance.html#investment" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">Fisabco</a>
-                    <a href="/finance.html#advisory" class="text-sm text-on-surface-variant py-2 px-2 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors">The Consul Club</a>
-                </div>
-            </div>
-            <a href="/contact.html" class="text-base font-headline font-medium text-on-surface-variant hover:text-primary transition-colors py-3 border-b border-outline-variant/30">Contact</a>
-            <a href="/contact.html" class="bg-primary text-white text-center py-3 rounded-xl mt-4 font-headline font-bold text-base">Contact Us</a>
-        </div>
-    </div>
     </nav>
-    <main class="pt-28">
+    <!-- Mobile Menu - Full Screen Overlay -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-header">
+                <a href="/index.html" class="menu-item-link">Home</a>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <div class="mobile-dropdown-content-inner">
+                    <a href="/index.html#about" class="text-sm">B2C</a>
+                    <a href="/index.html#team" class="text-sm">B2B</a>
+                    <a href="/index.html#careers" class="text-sm">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-header">
+                <a href="/profile.html" class="menu-item-link">Profile</a>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <div class="mobile-dropdown-content-inner">
+                    <a href="/profile.html#mission">Values, Vision & Mission</a>
+                    <a href="/profile.html#leadership">Corporate Governance</a>
+                    <a href="/profile.html#history">Quality Policy</a>
+                    <a href="/profile.html#history">HSE Policy</a>
+                    <a href="/profile.html#history">Business Continuity & Sustainability Policy</a>
+                    <a href="/profile.html#history">Competitive Advantage</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-header">
+                <a href="/buisnesssectors.html" class="menu-item-link active">Business Sectors</a>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <div class="mobile-dropdown-content-inner">
+                    <span class="category-label">Digital & Innovation</span>
+                    <a href="#">MyNets Electronics</a>
+                    <a href="#">FlyDrone Drone Alarm & Video Technologie</a>
+                    <a href="#">SpaceCities</a>
+                    <a href="#">Fastcom</a>
+                    <a href="#">E-Shops & Retail</a>
+                    <a href="#">IdeoFix</a>
+                    <span class="category-label">Gastro Hellas</span>
+                    <a href="#">JumpIn Fast Food</a>
+                    <a href="#">Souvlaki Shops Fast Food</a>
+                    <a href="#">Annas Schnitzel Stube Restaurant</a>
+                    <a href="#">Salt n Peppers Bistro Brasserie</a>
+                    <a href="#">Ta Pentarakia Tavern</a>
+                    <a href="#">Bella Nova Cafe</a>
+                    <a href="#">Deutsches Eck Restaurant</a>
+                    <a href="#">Monte Carlo Restaurant</a>
+                    <a href="#">Annas Schnitzel Vipe Fast Food</a>
+                    <a href="#">TIC TOC Fast Food</a>
+                    <a href="#">TIC TOC Sandwichland</a>
+                    <a href="#">Yellowstone Seiler Ranch</a>
+                    <span class="category-label">Travel & Tourism</span>
+                    <a href="#">TTO Tourism</a>
+                    <a href="#">Star Tours</a>
+                    <a href="#">InterFastHellas</a>
+                    <a href="#">Terpo Tattoo Studio</a>
+                    <a href="#">FadeHall Barber</a>
+                    <a href="#">Linea Natura Massage Studio</a>
+                    <a href="#">Obsidian Piercing Studio</a>
+                    <a href="#">Nailing Fit Nail Studio</a>
+                    <a href="#">Stay In</a>
+                    <a href="#">Hellas Aid Home Health and Care Services</a>
+                    <a href="#">Hellas Aid Physiotherapy</a>
+                    <a href="#">Hellas Aid Medical Tourism</a>
+                    <a href="#">Witeliners</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-header">
+                <a href="/finance.html" class="menu-item-link">Business & Finance</a>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <div class="mobile-dropdown-content-inner">
+                    <a href="/finance.html#services">Investments</a>
+                    <a href="/finance.html#investment">Fisabco</a>
+                    <a href="/finance.html#advisory">The Consul Club</a>
+                </div>
+            </div>
+        </div>
+        <a href="/contact.html" class="menu-item-link">Contact</a>
+        <a href="/contact.html" class="mobile-menu-cta">Contact Us</a>
+    </div>
+<main class="pt-28">
     <!-- Hero Section -->
     <header class="max-w-screen-2xl mx-auto px-8 mb-16">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
@@ -510,8 +665,8 @@
     <div class="flex flex-col gap-6">
     <span class="text-primary font-headline text-xs tracking-wide uppercase font-bold">Subscribe to Insights</span>
     <div class="relative">
-    <input class="w-full bg-surface border-outline-variant rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-secondary outline-none border" placeholder="Your work email" type="email">
-    <button class="absolute right-2 top-2 bg-primary text-on-primary p-1 rounded-md">
+    <input class="w-full bg-surface border-outline-variant rounded-lg pl-4 pr-12 py-3 text-sm focus:ring-2 focus:ring-secondary outline-none border" placeholder="Your work email" type="email">
+    <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-on-primary p-1.5 rounded-md flex items-center justify-center">
     <span class="material-symbols-outlined text-sm">arrow_forward</span>
     </button>
     </div>
