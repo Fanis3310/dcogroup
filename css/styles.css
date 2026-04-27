@@ -499,3 +499,208 @@ a, button {
         gap: 1.5rem;
     }
 }
+
+
+
+/*MYLLEN STYLING STARTS HERE*/
+/*Styling info for submenu pages*/
+.submenu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.title {
+    grid-column: 1 / -1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 120px 20px 5px 20px;
+    color: var(--brand-color);
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.title h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 5px 20px 20px 20px;
+    padding: 20px;
+    color: var(--brand-color);
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.logo img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e3e4;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    color: #00113a;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.info p{
+    text-align: left;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #00113a;
+    text-align: justify;
+}
+
+.info p span{
+    font-weight: 700;
+    color: var(--brand-color);
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+
+
+/* Γενικό styling για το section των υπηρεσιών */
+.services {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Inter', sans-serif; 
+}
+
+.services h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--brand-secondary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+/* Styling για τη λίστα (Βασική μορφή για κινητά: 1 στήλη) */
+.services ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Όταν η οθόνη είναι από tablet και πάνω */
+@media (min-width: 768px) {
+    .services ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Styling για κάθε αντικείμενο της λίστας (Κάρτα) */
+.services li {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--brand-secondary-color); 
+    font-weight: 500;
+    color: #444;
+}
+
+/* Hover effect: Τι γίνεται όταν το ποντίκι πάει πάνω από την κάρτα */
+.services li:hover {
+    transform: translateY(-3px); /* Σηκώνεται ελαφρώς προς τα πάνω */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Πιο έντονη σκιά */
+    background: #ffffff;
+    border-left-color: var(--brand-color); 
+}
+
+/* Styling για τα εικονίδια του Font Awesome */
+.services li i {
+    color: var(--brand-color); /* Τεχνολογικό μπλε χρώμα */
+    font-size: 1.4rem;
+    margin-right: 15px;
+    width: 30px; /* Σταθερό πλάτος για να είναι απόλυτα ευθυγραμμισμένα τα κείμενα */
+    text-align: center;
+}
+
+.contact {
+    text-align: right;
+    font-size: 20px;
+    color: #00113a;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.contact h2{
+    text-align: right;
+    font-size: 22px;
+    color: var(--brand-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/*MYLLEN STYLING ENDS HERE*/
