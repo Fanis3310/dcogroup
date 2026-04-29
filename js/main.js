@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initSmoothScroll();
     initMobileMenu();
-    initActiveMobileMenuLink();
 });
 
 // Keep the current page highlighted in the mobile menu
